@@ -107,17 +107,17 @@ export default function App() {
               <div className="w-10 h-10 bg-editorial-accent rounded-full flex items-center justify-center">
                 <div className="w-4 h-4 bg-agro-dark transform rotate-45"></div>
               </div>
-              <span className="text-xl font-bold tracking-tighter uppercase text-white">
-                iGrow <span className="text-editorial-accent italic font-serif">Seguros</span>
+              <span className="text-xl font-display font-bold tracking-tighter uppercase text-white">
+                iGrow <span className="text-editorial-accent italic font-display">Seguros</span>
               </span>
             </div>
             
             <div className="hidden md:flex items-center gap-10">
-              <a href="#services" className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-70 hover:opacity-100 hover:text-editorial-accent transition-all">Serviços</a>
-              <a href="#about" className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-70 hover:opacity-100 hover:text-editorial-accent transition-all">Diferenciais</a>
+              <a href="#services" className="text-[10px] font-sweet font-bold tracking-[0.2em] uppercase opacity-70 hover:opacity-100 hover:text-editorial-accent transition-all">Serviços</a>
+              <a href="#about" className="text-[10px] font-sweet font-bold tracking-[0.2em] uppercase opacity-70 hover:opacity-100 hover:text-editorial-accent transition-all">Diferenciais</a>
               <motion.a 
                 href="#contact" 
-                className="relative overflow-hidden text-editorial-accent font-bold tracking-wider text-sm border border-editorial-accent/30 px-6 py-2 group"
+                className="relative overflow-hidden text-editorial-accent font-sweet font-bold tracking-wider text-sm border border-editorial-accent/30 px-6 py-2 group"
                 whileHover="hover"
                 initial="initial"
               >
@@ -156,12 +156,12 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden bg-agro-dark border-b border-white/10 py-8 px-6 space-y-6"
           >
-            <a href="#services" className="block text-[10px] font-bold uppercase tracking-[0.2em]" onClick={() => setIsMenuOpen(false)}>Serviços</a>
-            <a href="#about" className="block text-[10px] font-bold uppercase tracking-[0.2em]" onClick={() => setIsMenuOpen(false)}>Diferenciais</a>
+            <a href="#services" className="block text-[10px] font-sweet font-bold uppercase tracking-[0.2em]" onClick={() => setIsMenuOpen(false)}>Serviços</a>
+            <a href="#about" className="block text-[10px] font-sweet font-bold uppercase tracking-[0.2em]" onClick={() => setIsMenuOpen(false)}>Diferenciais</a>
             <motion.a 
               href="#contact" 
               whileTap={{ scale: 0.95 }}
-              className="block bg-white text-[#A6C253] font-bold tracking-widest text-center py-4 border border-editorial-accent/30" 
+              className="block bg-white text-[#A6C253] font-sweet font-bold tracking-widest text-center py-4 border border-editorial-accent/30" 
               onClick={() => setIsMenuOpen(false)}
             >
               INICIAR COTAÇÃO
@@ -181,8 +181,8 @@ export default function App() {
             className="w-full h-full"
           >
             <img 
-              src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=2000" 
-              alt="Harvest field" 
+              src="https://images.unsplash.com/photo-1594488651095-f9aacc6d6350?auto=format&fit=crop&q=80&w=2000" 
+              alt="Modern harvesting tractor" 
               className="w-full h-full object-cover opacity-30"
               referrerPolicy="no-referrer"
             />
@@ -202,7 +202,7 @@ export default function App() {
             >
               <div className="flex items-center gap-3 mb-8">
                 <span className="w-8 h-[1px] bg-editorial-accent"></span>
-                <span className="text-editorial-accent uppercase tracking-[0.2em] md:tracking-[0.5em] text-[8px] md:text-[10px] font-bold">
+                <span className="text-editorial-accent uppercase tracking-[0.2em] md:tracking-[0.5em] text-[8px] md:text-[10px] font-sweet font-bold">
                   Especialista em Riscos Agrícolas
                 </span>
               </div>
@@ -220,7 +220,7 @@ export default function App() {
                 }}
                 initial="hidden"
                 animate="visible"
-                className="text-3xl sm:text-5xl lg:text-[5.5rem] font-serif font-light text-[#F0F0F0] leading-tight lg:leading-[1.1] mb-8 italic"
+                className="text-3xl sm:text-5xl lg:text-[5.5rem] font-display font-light text-[#F0F0F0] leading-tight lg:leading-[1.1] mb-8 italic"
               >
                 {["A", "tecnologia", "que", "protege", "sua", "safra."].map((text, i) => (
                   <motion.span
@@ -253,7 +253,7 @@ export default function App() {
                   href="#contact" 
                   whileHover="hover"
                   initial="initial"
-                  className="w-full sm:w-auto relative overflow-hidden px-8 py-5 md:px-12 md:py-6 bg-editorial-accent text-agro-dark font-bold text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] uppercase group flex items-center justify-center"
+                  className="w-full sm:w-auto relative overflow-hidden px-8 py-5 md:px-12 md:py-6 bg-editorial-accent text-agro-dark font-sweet font-bold text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] uppercase group flex items-center justify-center"
                 >
                   <motion.div 
                     className="absolute inset-0 bg-white"
@@ -277,8 +277,8 @@ export default function App() {
                       </div>
                     ))}
                   </div>
-                  <div className="text-[9px] uppercase tracking-widest leading-tight">
-                    <span className="text-white font-bold block">+1.200</span>
+                  <div className="text-[9px] font-sweet uppercase tracking-widest leading-tight">
+                    <span className="text-white font-display font-bold block">+1.200</span>
                     <span className="text-white/40">Produtores Segurados</span>
                   </div>
                 </div>
@@ -302,14 +302,14 @@ export default function App() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-dark/80 to-transparent"></div>
                 <div className="absolute bottom-6 left-6">
-                  <span className="text-[10px] font-bold text-editorial-accent uppercase tracking-widest block mb-2">Máquinas</span>
-                  <p className="text-white text-xs font-serif italic">Cobertura All-Risk</p>
+                  <span className="text-[10px] font-sweet font-bold text-editorial-accent uppercase tracking-widest block mb-2">Máquinas</span>
+                  <p className="text-white text-xs font-display italic">Cobertura All-Risk</p>
                 </div>
               </div>
               <div className="card-glass p-8 flex items-center justify-between border-editorial-accent/20">
                 <div>
-                   <p className="text-[9px] text-white/40 uppercase tracking-widest mb-1">Taxas Médias</p>
-                   <p className="text-white font-bold text-sm">-18.4% vs Mercado</p>
+                   <p className="text-[9px] text-white/40 font-sweet uppercase tracking-widest mb-1">Taxas Médias</p>
+                   <p className="text-white font-sweet font-bold text-sm">-18.4% vs Mercado</p>
                 </div>
                 <TrendingUp className="text-editorial-accent" size={20} />
               </div>
@@ -324,7 +324,7 @@ export default function App() {
               <div className="card-glass p-8 bg-white/5 border-white/10 backdrop-blur-3xl">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-2 h-2 rounded-full bg-editorial-accent animate-pulse"></div>
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-white/60">Análise em Tempo Real</span>
+                  <span className="text-[9px] font-sweet font-bold uppercase tracking-widest text-white/60">Análise em Tempo Real</span>
                 </div>
                 <div className="space-y-3">
                    <div className="h-[2px] w-full bg-white/5 rounded-full overflow-hidden">
@@ -335,7 +335,7 @@ export default function App() {
                         className="h-full bg-editorial-accent"
                       ></motion.div>
                    </div>
-                   <div className="flex justify-between text-[8px] text-white/30 uppercase tracking-widest">
+                   <div className="flex justify-between text-[8px] text-white/30 font-sweet uppercase tracking-widest">
                       <span>Risco Climático</span>
                       <span>Baixo</span>
                    </div>
@@ -350,11 +350,11 @@ export default function App() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-dark/80 to-transparent"></div>
                 <div className="absolute bottom-6 left-6">
-                  <span className="text-[10px] font-bold text-editorial-accent uppercase tracking-widest block mb-2">Armazenagem</span>
-                  <p className="text-white text-xs font-serif italic">Seguro Safra & Silos</p>
+                  <span className="text-[10px] font-sweet font-bold text-editorial-accent uppercase tracking-widest block mb-2">Armazenagem</span>
+                  <p className="text-white text-xs font-display italic">Seguro Safra & Silos</p>
                 </div>
               </div>
-              <div className="vertical-text text-[9px] uppercase tracking-[0.5em] opacity-10 absolute -right-12 top-0 font-bold">AGRICULTURAL SOLUTIONS</div>
+              <div className="vertical-text text-[9px] font-sweet uppercase tracking-[0.5em] opacity-10 absolute -right-12 top-0 font-bold">AGRICULTURAL SOLUTIONS</div>
             </motion.div>
           </div>
         </div>
@@ -397,8 +397,8 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="max-w-xl"
           >
-            <span className="text-editorial-accent uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Especialidades</span>
-            <h2 className="text-4xl md:text-6xl font-serif italic font-light tracking-tight text-white mb-6">Onde somos <span className="font-bold text-editorial-accent not-italic tracking-tighter">experts</span></h2>
+            <span className="text-editorial-accent uppercase tracking-[0.3em] text-[10px] font-sweet font-bold mb-4 block">Especialidades</span>
+            <h2 className="text-4xl md:text-6xl font-display italic font-light tracking-tight text-white mb-6">Onde somos <span className="font-bold text-editorial-accent not-italic tracking-tighter">experts</span></h2>
             <p className="text-white/50 font-light leading-relaxed">
               Soluções modernas e robustas para os desafios mais complexos do agronegócio e logística industrial.
             </p>
@@ -485,27 +485,27 @@ export default function App() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-editorial-accent uppercase tracking-[0.3em] text-[10px] font-bold mb-6 block">Ofertas Premium</span>
-              <h2 className="text-4xl md:text-6xl font-serif italic font-light text-white mb-10 leading-tight">
+              <span className="text-editorial-accent uppercase tracking-[0.3em] text-[10px] font-sweet font-bold mb-6 block">Ofertas Premium</span>
+              <h2 className="text-4xl md:text-6xl font-display italic font-light text-white mb-10 leading-tight">
                 Condições <span className="text-editorial-accent not-italic font-bold tracking-tighter">exclusivas</span> para frotas de todos os portes.
               </h2>
               <div className="space-y-4 mb-12">
                 <div className="card-glass p-8 hover:bg-white/5 transition-all cursor-default">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="text-2xl font-serif italic text-editorial-accent">A.</span>
-                    <h4 className="text-white font-bold text-sm uppercase tracking-widest">Frota Agrícola & Linha Amarela</h4>
+                    <span className="text-2xl font-display italic text-editorial-accent">A.</span>
+                    <h4 className="text-white font-sweet font-bold text-sm uppercase tracking-widest">Frota Agrícola & Linha Amarela</h4>
                   </div>
-                  <p className="text-white/40 text-xs leading-relaxed">Especialidade em máquinas pesadas, retroescavadeiras e frotas integradas com taxas agressivas.</p>
+                  <p className="text-white/40 text-xs leading-relaxed font-sans">Especialidade em máquinas pesadas, retroescavadeiras e frotas integradas com taxas agressivas.</p>
                 </div>
                 <div className="card-glass p-8 hover:bg-white/5 transition-all cursor-default">
                    <div className="flex items-center gap-4 mb-4">
-                    <span className="text-2xl font-serif italic text-editorial-accent">B.</span>
-                    <h4 className="text-white font-bold text-sm uppercase tracking-widest">Leves e Pesados</h4>
+                    <span className="text-2xl font-display italic text-editorial-accent">B.</span>
+                    <h4 className="text-white font-sweet font-bold text-sm uppercase tracking-widest">Leves e Pesados</h4>
                   </div>
-                  <p className="text-white/40 text-xs leading-relaxed">Cobertura inteligente para transportadoras e frotas corporativas de apoio logístico.</p>
+                  <p className="text-white/40 text-xs leading-relaxed font-sans">Cobertura inteligente para transportadoras e frotas corporativas de apoio logístico.</p>
                 </div>
               </div>
-              <button className="flex items-center text-agro-dark font-bold bg-editorial-accent px-10 py-5 text-xs tracking-widest uppercase hover:opacity-90 transition-all group">
+              <button className="flex items-center text-agro-dark font-sweet font-bold bg-editorial-accent px-10 py-5 text-xs tracking-widest uppercase hover:opacity-90 transition-all group">
                 SOLICITAR COTAÇÃO DE FROTA
                 <ArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" size={16} />
               </button>
@@ -530,11 +530,11 @@ export default function App() {
               </div>
               <div className="absolute -bottom-8 -left-4 md:-bottom-12 md:-left-12 card-glass p-6 md:p-12 max-w-sm backdrop-blur-2xl transition-transform duration-700 group-hover:-translate-y-2">
                 <div className="flex items-center gap-6 mb-4">
-                  <span className="text-5xl font-serif italic text-editorial-accent">-15%</span>
+                  <span className="text-5xl font-display italic text-editorial-accent">-15%</span>
                   <div className="h-10 w-[1px] bg-white/10"></div>
-                  <span className="text-[10px] text-white/50 font-bold uppercase tracking-[0.2em] leading-tight">Média de <br />Economia</span>
+                  <span className="text-[10px] text-white/50 font-sweet font-bold uppercase tracking-[0.2em] leading-tight">Média de <br />Economia</span>
                 </div>
-                <p className="text-[10px] text-white/30 leading-relaxed italic font-serif">Baseado em nossas taxas preferenciais com as maiores seguradoras do mundo.</p>
+                <p className="text-[10px] text-white/30 leading-relaxed italic font-display">Baseado em nossas taxas preferenciais com as maiores seguradoras do mundo.</p>
               </div>
             </motion.div>
           </div>
@@ -544,12 +544,12 @@ export default function App() {
       <section id="about" className="py-32 bg-[#2d444c] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center mb-24 gap-8 md:gap-0">
-             <div className="h-[1px] flex-grow bg-white/5 hidden md:block w-full"></div>
-             <div className="px-0 md:px-12 text-center">
-                <span className="text-editorial-accent uppercase tracking-[0.4em] text-[10px] font-bold mb-4 block">Excelência</span>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif italic font-light text-white tracking-tight leading-tight">Por que iGrow <span className="not-italic font-bold text-editorial-accent tracking-tighter">Seguros</span>?</h2>
+             <div className="h-[1px] flex-grow bg-white/5 hidden md:block"></div>
+             <div className="px-0 md:px-12 text-center shrink-0">
+                <span className="text-editorial-accent uppercase tracking-[0.4em] text-[10px] font-sweet font-bold mb-4 block">Excelência</span>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display italic font-light text-white tracking-tight leading-tight md:whitespace-nowrap">Por que iGrow <span className="not-italic font-bold text-editorial-accent tracking-tighter">Seguros</span>?</h2>
              </div>
-             <div className="h-[1px] flex-grow bg-white/5 hidden md:block w-full"></div>
+             <div className="h-[1px] flex-grow bg-white/5 hidden md:block"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
@@ -580,8 +580,8 @@ export default function App() {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 relative z-10">
               <div>
-                <span className="text-editorial-accent uppercase tracking-[0.4em] text-[10px] font-bold mb-6 block">Consultoria</span>
-                <h2 className="text-4xl md:text-6xl font-serif font-light text-white mb-10 italic">
+                <span className="text-editorial-accent uppercase tracking-[0.4em] text-[10px] font-sweet font-bold mb-6 block">Consultoria</span>
+                <h2 className="text-4xl md:text-6xl font-display font-light text-white mb-10 italic">
                   Pronto para <span className="text-editorial-accent font-bold not-italic tracking-tighter">blindar</span> seu agronegócio?
                 </h2>
                 <div className="space-y-10">
@@ -599,8 +599,8 @@ export default function App() {
                       <Mail className="text-editorial-accent" size={18} />
                     </div>
                     <div>
-                      <p className="text-white/30 font-bold uppercase tracking-[0.2em] text-[8px] md:text-[9px] mb-1">E-mail corporativo</p>
-                      <p className="text-white text-base md:text-xl font-medium tracking-tight hover:text-editorial-accent transition-colors cursor-pointer break-all md:break-normal">gabriel@igrowseguros.com</p>
+                      <p className="text-white/30 font-sweet font-bold uppercase tracking-[0.2em] text-[8px] md:text-[9px] mb-1">E-mail corporativo</p>
+                      <p className="text-white text-base md:text-xl font-display font-medium tracking-tight hover:text-editorial-accent transition-colors cursor-pointer break-all md:break-normal">gabriel@igrowseguros.com</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -608,8 +608,8 @@ export default function App() {
                       <MapPin className="text-editorial-accent" size={18} />
                     </div>
                     <div>
-                      <p className="text-white/30 font-bold uppercase tracking-[0.2em] text-[8px] md:text-[9px] mb-1">onde estamos localizados</p>
-                      <p className="text-white text-base md:text-xl font-medium tracking-tight">Uberaba, Minas Gerais</p>
+                      <p className="text-white/30 font-sweet font-bold uppercase tracking-[0.2em] text-[8px] md:text-[9px] mb-1">onde estamos localizados</p>
+                      <p className="text-white text-base md:text-xl font-display font-medium tracking-tight">Uberaba, Minas Gerais</p>
                     </div>
                   </div>
                 </div>
@@ -618,15 +618,15 @@ export default function App() {
               <div className="card-glass p-6 md:p-8 relative overflow-hidden backdrop-blur-3xl shadow-3xl">
                 <form className="space-y-5 md:space-y-6" onSubmit={(e) => e.preventDefault()}>
                   <div>
-                    <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2 md:mb-3">Nome Completo</label>
+                    <label className="block text-[10px] font-sweet font-bold text-white/40 uppercase tracking-widest mb-2 md:mb-3">Nome Completo</label>
                     <input type="text" className="w-full bg-white/5 border border-white/10 rounded-none px-4 md:px-6 py-4 focus:outline-none focus:border-editorial-accent text-white transition-colors text-sm" placeholder="Ex: João da Silva" />
                   </div>
                   <div>
-                    <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2 md:mb-3">E-mail</label>
+                    <label className="block text-[10px] font-sweet font-bold text-white/40 uppercase tracking-widest mb-2 md:mb-3">E-mail</label>
                     <input type="email" className="w-full bg-white/5 border border-white/10 rounded-none px-4 md:px-6 py-4 focus:outline-none focus:border-editorial-accent text-white transition-colors text-sm" placeholder="joao@fazenda.com" />
                   </div>
                   <div>
-                    <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2 md:mb-3">Interesse Principal</label>
+                    <label className="block text-[10px] font-sweet font-bold text-white/40 uppercase tracking-widest mb-2 md:mb-3">Interesse Principal</label>
                     <div className="relative">
                         <select className="w-full bg-white/5 border border-white/10 rounded-none px-4 md:px-6 py-4 focus:outline-none focus:border-editorial-accent text-white transition-colors appearance-none cursor-pointer text-sm">
                           <option className="bg-agro-dark">Seguro de Máquinas</option>
@@ -637,7 +637,7 @@ export default function App() {
                         <ChevronRight className="absolute right-4 top-1/2 -translate-y-1/2 text-white/20 rotate-90" size={16} />
                     </div>
                   </div>
-                  <button className="w-full bg-editorial-accent text-agro-dark font-bold py-4 md:py-5 text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] uppercase hover:opacity-90 transition-all shadow-2xl shadow-agro-green/10">
+                  <button className="w-full bg-editorial-accent text-agro-dark font-sweet font-bold py-4 md:py-5 text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em] uppercase hover:opacity-90 transition-all shadow-2xl shadow-agro-green/10">
                     Solicitar proposta
                   </button>
                 </form>
@@ -655,8 +655,8 @@ export default function App() {
                 <div className="w-8 h-8 bg-editorial-accent rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-agro-dark transform rotate-45"></div>
                 </div>
-                <span className="text-lg font-bold tracking-tighter uppercase text-white">
-                  iGrow <span className="text-editorial-accent italic font-serif">Seguros</span>
+                <span className="text-lg font-display font-bold tracking-tighter uppercase text-white">
+                  iGrow <span className="text-editorial-accent italic">Seguros</span>
                 </span>
               </div>
               <p className="text-white/40 text-sm leading-relaxed max-w-xs font-light">
@@ -665,25 +665,25 @@ export default function App() {
             </div>
 
             <div>
-              <h4 className="text-white font-bold text-[10px] uppercase tracking-[0.3em] mb-8">Navegação</h4>
+              <h4 className="text-white font-sweet font-bold text-[10px] uppercase tracking-[0.3em] mb-8">Navegação</h4>
               <ul className="space-y-4">
-                <li><a href="#services" className="text-white/30 hover:text-editorial-accent text-xs transition-colors">Nossos Serviços</a></li>
-                <li><a href="#about" className="text-white/30 hover:text-editorial-accent text-xs transition-colors">Diferenciais</a></li>
-                <li><a href="#contact" className="text-white/30 hover:text-editorial-accent text-xs transition-colors">Inicie uma Cotação</a></li>
+                <li><a href="#services" className="text-white/30 hover:text-editorial-accent text-xs font-sweet transition-colors">Nossos Serviços</a></li>
+                <li><a href="#about" className="text-white/30 hover:text-editorial-accent text-xs font-sweet transition-colors">Diferenciais</a></li>
+                <li><a href="#contact" className="text-white/30 hover:text-editorial-accent text-xs font-sweet transition-colors">Inicie uma Cotação</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-white font-bold text-[10px] uppercase tracking-[0.3em] mb-8">Contato</h4>
+              <h4 className="text-white font-sweet font-bold text-[10px] uppercase tracking-[0.3em] mb-8">Contato</h4>
               <ul className="space-y-4">
-                <li className="text-white/30 text-xs">Uberaba, MG — Brasil</li>
-                <li><a href="mailto:gabriel@igrowseguros.com" className="text-white/30 hover:text-white text-xs transition-colors break-all">gabriel@igrowseguros.com</a></li>
-                <li className="text-white/30 text-xs">(34) 99771-3987</li>
+                <li className="text-white/30 text-xs font-sweet">Uberaba, MG — Brasil</li>
+                <li><a href="mailto:gabriel@igrowseguros.com" className="text-white/30 hover:text-white text-xs font-sweet transition-colors break-all">gabriel@igrowseguros.com</a></li>
+                <li className="text-white/30 text-xs font-sweet">(34) 99771-3987</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-white font-bold text-[10px] uppercase tracking-[0.3em] mb-8">Social</h4>
+              <h4 className="text-white font-sweet font-bold text-[10px] uppercase tracking-[0.3em] mb-8">Social</h4>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/20 hover:text-editorial-accent hover:border-editorial-accent transition-all">
                   <Linkedin size={18} />
